@@ -11,5 +11,5 @@ let heigth = await inquirer.prompt([{
         type: "number",
         message: "Enter your height in ft:"
     }]);
-const imc = (weight.kg / (heigth.ft * heigth.ft));
-console.log(chalk.bold.underline("Your BMI is:"), chalk.bold.bgGreenBright(`${imc}`));
+const bmi = (weight.kg / (heigth.ft * heigth.ft));
+console.log(chalk.bold.underline("Your BMI is:"), chalk.bold.bgGreenBright(`${bmi}`));
